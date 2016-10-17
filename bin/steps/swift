@@ -6,3 +6,4 @@ if ! [ -d "$SWIFT_PREFIX" ]; then
   puts-step "Installing $VERSION"
   swiftenv install
 fi
+apt-get install uuid-dev

@@ -7,4 +7,3 @@ find $BUILD_DIR/.build/$SWIFT_BUILD_CONFIGURATION -name '*.so' -type f -exec cp 
 puts-step "Installing binaries"
 mkdir -p $BUILD_DIR/.swift-bin
 find $BUILD_DIR/.build/$SWIFT_BUILD_CONFIGURATION ! -name '*.so' -type f -perm /a+x -exec cp {} $BUILD_DIR/.swift-bin \;
-apt-get install uuid-dev
