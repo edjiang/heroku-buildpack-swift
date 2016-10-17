@@ -6,5 +6,5 @@ if ! [ -d "$SWIFT_PREFIX" ]; then
   puts-step "Installing $VERSION"
   swiftenv install
 fi
-mount -o remount,rw /
-apt-get install uuid-dev
+sudo mount -o remount,rw /
+sudo apt-get install uuid-dev
